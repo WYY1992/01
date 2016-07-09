@@ -11,9 +11,9 @@ void main ()
     p0 = &F[0];
 	p1 = &F[1];
 	
-	for (i = 2; i <= n-1; i++, p0++, p1++)
+	for (i = 2; i <= n; i++, p0++, p1++)
 	{
-		F[i] = *p1 + *p1;
+		F[i] = *p0 + *p1;
 	}
-	printf("%d\n", F[n-1]);
+	printf("%d\n", F[n]);
 }
